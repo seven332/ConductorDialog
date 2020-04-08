@@ -120,7 +120,7 @@ public class DialogController extends Controller implements DialogInterface {
 
   @NonNull
   @Override
-  protected final View onCreateView(@NonNull LayoutInflater inflater, @NonNull ViewGroup container) {
+  protected final View onCreateView(@NonNull LayoutInflater inflater, @NonNull ViewGroup container, Bundle bundle) {
     inflater = resolveLayoutInflater(inflater);
     View view = inflater.inflate(R.layout.cd_controller_dialog, container, false);
 

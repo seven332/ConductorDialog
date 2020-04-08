@@ -20,6 +20,7 @@ package com.hippo.conductor.dialog.demo;
  * Created by Hippo on 4/2/2017.
  */
 
+import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -37,7 +38,7 @@ public class HomeController extends Controller {
 
   @NonNull
   @Override
-  protected View onCreateView(@NonNull LayoutInflater inflater, @NonNull ViewGroup container) {
+  protected View onCreateView(@NonNull LayoutInflater inflater, @NonNull ViewGroup container, Bundle bundle) {
     View view = inflater.inflate(R.layout.controller_home, container, false);
     ListView list = (ListView) view.findViewById(R.id.list);
     list.setAdapter(new ArrayAdapter<>(
